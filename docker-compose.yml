@@ -2,6 +2,8 @@ version: '3'
 services:
 
   web:
-    build: .
+    build:
+      dockerfile: ./Dockerfile
+      context: .
     ports:
-     - "8183:80"
+      - "8080:80"
